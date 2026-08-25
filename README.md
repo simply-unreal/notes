@@ -41,5 +41,3 @@ then to run the program with CMake just run
 ./run.sh
 ```
 or you can get the script run extension on VSCode to run `run.sh` with the click of a button
-
-if you want to use a debugger you can push F5 and it will start debugging the program
