@@ -5,10 +5,8 @@ run
 ```bash
 mkdir build
 mkdir src
-mkdir .vscode
 mkdir include
 touch src/main.cpp
-touch .vscode/launch.json
 touch CMakeLists.txt
 touch run.sh
 ```
