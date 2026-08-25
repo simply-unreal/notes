@@ -28,35 +28,6 @@ add_executable([project_name]
 )
 ```
 
-then in `launch.json` add this
-```json
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "CMake Debug",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${command:cmake.launchTargetPath}",
-      "args": [],
-      "stopAtEntry": true,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
-      "preLaunchTask": "CMake: build"
-    }
-  ]
-}
-```
-
 then in `run.sh` add this
 ```bash
 cmake --build build && clear && ./build/[project_name]
